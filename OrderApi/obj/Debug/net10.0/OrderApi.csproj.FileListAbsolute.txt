@@ -1,0 +1,34 @@
+/Users/rodrigonavone/OrderApi/obj/Debug/net10.0/rpswa.dswa.cache.json
+/Users/rodrigonavone/OrderApi/obj/Debug/net10.0/OrderApi.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rodrigonavone/OrderApi/obj/Debug/net10.0/OrderApi.AssemblyInfoInputs.cache
+/Users/rodrigonavone/OrderApi/obj/Debug/net10.0/OrderApi.AssemblyInfo.cs
+/Users/rodrigonavone/OrderApi/obj/Debug/net10.0/OrderApi.csproj.CoreCompileInputs.cache
+/Users/rodrigonavone/OrderApi/obj/Debug/net10.0/OrderApi.MvcApplicationPartsAssemblyInfo.cache
+/Users/rodrigonavone/Desktop/API Pedidos/OrderApi/bin/Debug/net10.0/appsettings.Development.json
+/Users/rodrigonavone/Desktop/API Pedidos/OrderApi/bin/Debug/net10.0/appsettings.json
+/Users/rodrigonavone/Desktop/API Pedidos/OrderApi/bin/Debug/net10.0/OrderApi.staticwebassets.endpoints.json
+/Users/rodrigonavone/Desktop/API Pedidos/OrderApi/bin/Debug/net10.0/OrderApi
+/Users/rodrigonavone/Desktop/API Pedidos/OrderApi/bin/Debug/net10.0/OrderApi.deps.json
+/Users/rodrigonavone/Desktop/API Pedidos/OrderApi/bin/Debug/net10.0/OrderApi.runtimeconfig.json
+/Users/rodrigonavone/Desktop/API Pedidos/OrderApi/bin/Debug/net10.0/OrderApi.dll
+/Users/rodrigonavone/Desktop/API Pedidos/OrderApi/bin/Debug/net10.0/OrderApi.pdb
+/Users/rodrigonavone/Desktop/API Pedidos/OrderApi/obj/Debug/net10.0/rpswa.dswa.cache.json
+/Users/rodrigonavone/Desktop/API Pedidos/OrderApi/obj/Debug/net10.0/OrderApi.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rodrigonavone/Desktop/API Pedidos/OrderApi/obj/Debug/net10.0/OrderApi.AssemblyInfoInputs.cache
+/Users/rodrigonavone/Desktop/API Pedidos/OrderApi/obj/Debug/net10.0/OrderApi.AssemblyInfo.cs
+/Users/rodrigonavone/Desktop/API Pedidos/OrderApi/obj/Debug/net10.0/OrderApi.csproj.CoreCompileInputs.cache
+/Users/rodrigonavone/Desktop/API Pedidos/OrderApi/obj/Debug/net10.0/OrderApi.MvcApplicationPartsAssemblyInfo.cache
+/Users/rodrigonavone/Desktop/API Pedidos/OrderApi/obj/Debug/net10.0/rjimswa.dswa.cache.json
+/Users/rodrigonavone/Desktop/API Pedidos/OrderApi/obj/Debug/net10.0/rjsmrazor.dswa.cache.json
+/Users/rodrigonavone/Desktop/API Pedidos/OrderApi/obj/Debug/net10.0/rjsmcshtml.dswa.cache.json
+/Users/rodrigonavone/Desktop/API Pedidos/OrderApi/obj/Debug/net10.0/scopedcss/bundle/OrderApi.styles.css
+/Users/rodrigonavone/Desktop/API Pedidos/OrderApi/obj/Debug/net10.0/staticwebassets.build.json
+/Users/rodrigonavone/Desktop/API Pedidos/OrderApi/obj/Debug/net10.0/staticwebassets.build.json.cache
+/Users/rodrigonavone/Desktop/API Pedidos/OrderApi/obj/Debug/net10.0/staticwebassets.development.json
+/Users/rodrigonavone/Desktop/API Pedidos/OrderApi/obj/Debug/net10.0/staticwebassets.build.endpoints.json
+/Users/rodrigonavone/Desktop/API Pedidos/OrderApi/obj/Debug/net10.0/swae.build.ex.cache
+/Users/rodrigonavone/Desktop/API Pedidos/OrderApi/obj/Debug/net10.0/OrderApi.dll
+/Users/rodrigonavone/Desktop/API Pedidos/OrderApi/obj/Debug/net10.0/refint/OrderApi.dll
+/Users/rodrigonavone/Desktop/API Pedidos/OrderApi/obj/Debug/net10.0/OrderApi.pdb
+/Users/rodrigonavone/Desktop/API Pedidos/OrderApi/obj/Debug/net10.0/OrderApi.genruntimeconfig.cache
+/Users/rodrigonavone/Desktop/API Pedidos/OrderApi/obj/Debug/net10.0/ref/OrderApi.dll
