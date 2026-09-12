@@ -1,108 +1,64 @@
-# Order API
+# 🧾 Order API
 
-REST API desarrollada con ASP.NET Core para la gestión de pedidos (carritos), incluyendo validación de datos, cálculo de totales y testing automatizado.
+🌍 **[English](README.md) · [Español](README.es.md)**
 
----
+> REST API for order management built with ASP.NET Core, focused on clean layered architecture and automated testing.
+
+## 📋 Overview
+A backend project built to practice REST API design in .NET: layered architecture (Controllers, Services, Models), input validation, and a solid testing strategy including unit tests, integration tests, and mutation testing to verify the tests themselves catch real bugs.
 
 ## 🚀 Features
+- Create and list orders (carts) with product line items
+- Input validation: cart must have at least one item, quantity > 0, price > 0
+- Automatic total calculation
+- Proper HTTP status handling (200 OK / 400 Bad Request)
+- Layered architecture: Controllers → Services → Models
+- Dependency Injection throughout
 
-* Crear pedidos (carritos)
-* Validación de datos de entrada
-* Cálculo automático del total
-* Manejo de errores HTTP (400 / 200)
-* Arquitectura por capas:
+## 🧱 Tech Stack
+- .NET 10
+- ASP.NET Core Web API
+- C#
+- xUnit (unit + integration tests)
+- Dependency Injection
 
-  * Controllers
-  * Services
-  * Models
-* Tests automatizados:
+## 📁 Project Structure
+```
+OrderApi/            → Main API (Controllers, Services, Models)
+OrderApi.Tests/       → Unit and integration tests
+OrderSolution.slnx
+```
 
-  * Unit tests (lógica)
-  * Integration tests (HTTP)
-
----
-
-## 🛠️ Tecnologías
-
-* .NET 10
-* ASP.NET Core Web API
-* xUnit
-* Dependency Injection
-
----
-
-## 📁 Estructura del proyecto
-
-API Pedidos/
-
-* OrderApi/ → API principal
-* OrderApi.Tests/ → Tests
-* OrderSolution.slnx
-
----
-
-## ▶️ Ejecutar la API
-
-Desde la raíz del proyecto:
-
+## ▶️ Getting Started
+Clone the repo and run from the project root:
+```bash
 dotnet run --project OrderApi
+```
+The API starts at `http://localhost:5285`.
 
-La API se levanta en:
+### Endpoints
+| Method | Route     | Description         |
+|--------|-----------|----------------------|
+| GET    | `/orders` | List all orders      |
+| POST   | `/orders` | Create a new order    |
 
-http://localhost:5285
+Example `POST /orders` body:
+```json
+{
+  "items": [
+    { "nombreProducto": "A", "cantidad": 2, "precio": 100 }
+  ]
+}
+```
 
----
-
-## 🧪 Ejecutar tests
-
+## 🧪 Testing
+```bash
 dotnet test
+```
+Includes unit tests (business logic: totals, validations) and integration tests (end-to-end HTTP), plus mutation testing to confirm the test suite actually fails when the logic is broken.
 
----
+> Note: data is currently stored in memory and resets on restart. Persistence with a real database is a planned next step.
 
-## 📌 Endpoints principales
-
-### GET /orders
-
-Obtiene todos los pedidos.
-
----
-
-### POST /orders
-
-Crea un nuevo pedido.
-
-Ejemplo de body:
-
-{
-"items": [
-{
-"nombreProducto": "A",
-"cantidad": 2,
-"precio": 100
-}
-]
-}
-
----
-
-## ❌ Validaciones
-
-* El carrito debe tener al menos un producto
-* Cantidad > 0
-* Precio > 0
-
----
-
-## 🧠 Notas
-
-Actualmente la información se almacena en memoria (RAM).
-Los datos se pierden al reiniciar la aplicación.
-
----
-
-## 📈 Próximos pasos
-
-* Persistencia con base de datos
-* Mejora de arquitectura
-* Más casos de testing
-* Autenticación
+## 👤 Author
+**Rodrigo Navone**
+[GitHub](https://github.com/Rodri1923) · [LinkedIn](https://www.linkedin.com/in/rodrigonavone)
