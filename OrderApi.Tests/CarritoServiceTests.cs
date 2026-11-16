@@ -140,6 +140,14 @@ public class CarritoServiceTests
     }
 
     [Fact]
+    public void Producto_SinNombre_QuedaConNombreVacio()
+    {
+        var producto = new Producto { Cantidad = 1, Precio = 10 };
+
+        Assert.Equal("", producto.NombreProducto);
+    }
+
+    [Fact]
     public void GetAll_SinCarritos_DevuelveListaVacia()
     {
         var service = new CarritoService();

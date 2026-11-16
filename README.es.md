@@ -2,6 +2,8 @@
 
 🌍 **[English](README.md) · [Español](README.es.md)**
 
+[![CI](https://github.com/Rodri1923/order-api/actions/workflows/ci.yml/badge.svg)](https://github.com/Rodri1923/order-api/actions/workflows/ci.yml)
+
 > API REST para gestión de pedidos construida con ASP.NET Core, con foco en arquitectura por capas y testing automatizado.
 
 ## 📋 Descripción
@@ -55,7 +57,22 @@ Ejemplo de body para `POST /orders`:
 ```bash
 dotnet test
 ```
-Incluye unit tests (lógica de negocio: totales, validaciones) e integration tests (HTTP end-to-end), además de mutation testing para confirmar que la suite de tests realmente falla cuando se rompe la lógica.
+32 tests automatizados, que GitHub Actions corre en cada push:
+
+| Tipo | Qué verifica |
+|------|--------------|
+| Unit tests (`CarritoServiceTests`) | Total = cantidad × precio, valores borde (0 y negativos se rechazan), ids consecutivos, estado inicial, un pedido que falla no se guarda |
+| Integration tests (`CarritoControllerTests`) | Llamadas HTTP reales contra la API en memoria: códigos 200 / 400, cuerpo de la respuesta, mensaje de error, `GET /orders` |
+
+### Mutation testing
+Que los tests pasen solo prueba que el código funciona hoy. El mutation testing prueba a los tests: [Stryker.NET](https://stryker-mutator.io/docs/stryker-net/introduction/) mete errores chicos (mutantes) en el código, por ejemplo cambiar `<=` por `<`, y vuelve a correr la suite. Si algún test falla, el mutante queda "muerto".
+
+```bash
+dotnet tool install --global dotnet-stryker
+cd OrderApi.Tests
+dotnet stryker
+```
+Puntaje actual: ver el job *Mutation testing* de la última [corrida de CI](https://github.com/Rodri1923/order-api/actions/workflows/ci.yml) (el reporte HTML queda adjunto como artefacto).
 
 > Nota: los datos se almacenan en memoria y se pierden al reiniciar la aplicación. Persistencia con base de datos es un próximo paso planificado.
 
